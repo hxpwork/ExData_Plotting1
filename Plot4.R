@@ -13,7 +13,7 @@ datas <- read.table("household_power_consumption.txt",
 
 datas$DT <- strptime(paste(datas$Date, datas$Time), format="%d/%m/%Y %H:%M:%S") 
 
-png("plot4.png")
+png("plot4.png",width=480, height=480)
 
 par(mfrow=c(2,2))
 with(datas, {
