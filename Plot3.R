@@ -13,7 +13,7 @@ datas <- read.table("household_power_consumption.txt",
 
 datetimes <- strptime(paste(datas$Date, datas$Time), format="%d/%m/%Y %H:%M:%S") 
 
-png("plot3.png")
+png("plot3.png",width=480, height=480)
 
 plot(datetimes, datas$Sub_metering_1, type="l",xlab="",ylab="Energy sub metering")
 lines(datetimes, datas$Sub_metering_2, col="red")
